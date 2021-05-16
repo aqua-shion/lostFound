@@ -1,0 +1,30 @@
+page{
+  box-sizing: border-box;
+  padding: 40rpx;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20rpx;
+  width: 100%;
+  height: 500rpx;
+  border-radius: 20rpx;
+  box-shadow: 0rpx 0rpx 10rpx rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-bottom: 35rpx;
+}
+
+.title{
+  font-size: 32rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+}
+
+button.submit-btn{
+  margin-top: 50rpx;
+  background-color: #fdb92c;
+  border: none;
+  box-shadow: 4rpx 4rpx 5rpx rgba(253, 185, 44, .3);
+}

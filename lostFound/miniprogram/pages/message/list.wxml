@@ -1,0 +1,14 @@
+<view class="list">
+	<block wx:for="{{list}}" wx:key="_id">
+		<view class="item" data-read="{{item.read}}" id="{{item._id}}" data-uid="{{item.from}}" bindtap="toMessageDetail">
+			<view class="avatar">
+				<view class="read" wx:if="{{!item.read}}"></view>
+				<image mode="cover" src="{{item.avatarUrl}}"></image>
+			</view>
+			<view class="right">
+				<view class="nickname">{{item.nickName}}</view>
+				<view class="content">{{item.content}}</view>
+			</view>
+		</view>
+	</block>
+</view>

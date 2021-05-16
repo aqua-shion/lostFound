@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "tabbar": "../../tabbarComponent/tabbar",
+    "my-list" : "../../components/list/list"
+  },
+  "navigationBarTitleText": "科大寻物失招",
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="item">
+		<view class="top">
+			<view class="title">寻物启事</view>
+			<navigator class="more" url="/pages/list/all?type=lost">更多></navigator>
+		</view>
+		<my-list list="{{lost}}" />
+	</view>
+	<view class="item">
+		<view class="top">
+			<view class="title">失物招领</view>
+			<navigator class="more" url="/pages/list/all?type=found">更多></navigator>
+		</view>
+		<my-list list="{{found}}" />
+	</view>
+	<tabbar tabbar="{{tabbar}}"></tabbar>
+</view>
+	<div class="text" style=" text-align:center">这里是想要居中的文字</div>

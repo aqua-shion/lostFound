@@ -1,0 +1,14 @@
+.login {
+  position: relative;
+  box-sizing: content-box;
+  margin: 110rpx;
+  padding: 0;
+  height: 80rpx;
+  width: 530rpx;
+  color: #fff;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  border: 3px solid #000;
+  background-color: #fdb92c;
+  box-shadow: 8rpx 4rpx 0rpx #fdb92c;
+}

@@ -1,0 +1,51 @@
+<view class="header">
+	<view class="mask"></view>
+	<view class="message" wx:if="{{userInfo !== null}}" bindtap="toMessageList">
+		<i class="iconfont icon-xinfeng"></i>
+		<text class="msg-count" wx:if="{{messageCount !== 0}}">{{messageCount}}</text>
+	</view>
+	<view class="info">
+		<button wx:if="{{userInfo === null}}" bindtap="login"> 用户登录 </button>
+		<block wx:else>
+			<view class="avatar">
+				<image src="{{userInfo.avatarUrl}}" mode="cover"></image>
+			</view>
+			<view class="userinfo-nickname">{{userInfo.nickName}}</view>
+		</block>
+	</view>
+</view>
+
+<view class="nav">
+	<view class="nav-item">
+		<navigator class="content" hover-class="none" url="/pages/profile/profile">
+			<i class="iconfont icon-gerenxinxi"></i>
+			<text class="text">个人信息</text>
+			<i class="iconfont icon-xiangyou"></i>
+		</navigator>
+	</view>
+	<view class="nav-item">
+		<navigator class="content" hover-class="none" url="/pages/list/all?type=lost&mine=yes">
+			<i class="iconfont icon-found"></i>
+			<text class="text">我发布的失物招领</text>
+			<i class="iconfont icon-xiangyou"></i>
+		</navigator>
+	</view>
+	<view class="nav-item">
+		<navigator class="content" hover-class="none" url="/pages/list/all?type=found&mine=yes">
+			<i class="iconfont icon-lost"></i>
+			<text class="text">我发布的寻物启事</text>
+			<i class="iconfont icon-xiangyou"></i>
+		</navigator>
+	</view>
+	<view class="nav-item">
+		<view class="content">
+			<button open-type="contact" class="text"><i class="iconfont icon-kefu"></i>联系客服</button>
+		</view>
+	</view>
+
+</view>
+
+<!-- 底部弹出层 -->
+<m-login modalShow="{{modalShow}}" bind:loginsuccess="onLoginSuccess" bind:loginfail="onLoginFail">
+</m-login>
+<tabbar tabbar="{{tabbar}}"></tabbar>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "my-list": "../../components/list/list"
+  },
+  "enablePullDownRefresh": true
+}

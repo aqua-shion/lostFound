@@ -1,0 +1,13 @@
+<!--pages/middle/middle.wxml-->
+<navigator class="item" hover-class="none" url="/pages/publish/publish?type=lost">
+	<i class="iconfont icon-search"></i>
+	<view>
+		寻物启事
+	</view>
+</navigator>
+<navigator class="item"  url="/pages/publish/publish?type=found">
+	<i class="iconfont icon-gonggaoban"></i>
+	<view>
+		失物招领
+	</view>
+</navigator>

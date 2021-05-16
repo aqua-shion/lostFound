@@ -1,0 +1,23 @@
+.container{
+  padding-top: 30rpx;
+  padding-bottom: 120rpx;
+}
+.item .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  margin-bottom: -10rpx;
+}
+
+.top .title{
+  font-size: 38rpx;
+  font-weight: 600;
+}
+
+.top .more{
+  font-size: 24rpx;
+  color: #bbb;
+}

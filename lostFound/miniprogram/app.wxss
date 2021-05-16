@@ -1,0 +1,9 @@
+.my-btn{
+  height: 80rpx;
+  color: #fff;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  border: 2px solid #000;
+  background-color: #fdb92c;
+  box-shadow: 6rpx 6rpx 0rpx #fdb92c;
+}

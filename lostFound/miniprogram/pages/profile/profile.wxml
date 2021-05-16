@@ -1,0 +1,9 @@
+<view class="container">
+	<view class="item">
+		<input value="{{mobile}}" placeholder="请输入手机号码" bindinput="handleMobieInput"></input>
+	</view>
+	<view class="item">
+		<input value="{{wechat}}" placeholder="请输入微信号" bindinput="handleWechatInput"></input>
+	</view>
+	<button class="submit my-btn" bindtap="save">保存信息</button>
+</view>

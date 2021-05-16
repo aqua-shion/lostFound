@@ -1,0 +1,33 @@
+<wxs module="tutil" src="../../utils/formatTime.wxs"></wxs>
+<view class="back" catchtap="back"></view>
+<swiper autoplay interval="3000" circular>
+	<block wx:for="{{data.imgs}}" wx:key="*this">
+		<swiper-item>
+			<image catchtap="showPic" data-index="{{index}}" class="swiper-image" mode="aspectFill" src="{{item}}"></image>
+		</swiper-item>
+	</block>
+</swiper>
+<view class="content">
+	<view class="top">
+		<view class="title">{{data.title}}</view>
+		<view class="date">{{tutil.formatTime(data.date)}}</view>
+		<view class="message" catchtap="sendMessage"></view>
+	</view>
+	<view class="desc">
+		地点：{{data.place}}
+		描述：{{data.desc}}
+	</view>
+	<view wx:if="{{ifmaster}}">
+	<button  bindtap="remove" class="c-btn">删除信息</button>
+</view>
+	<view class="concat">
+		<view class="c-item mobile" wx:if="{{data.concat.mobile}}">
+			<view>手机号：{{data.concat.mobile}}</view>
+			<button catchtap="call" class="c-btn">拨打电话</button>
+		</view>
+		<view class="c-item wechat" wx:if="{{data.concat.wechat}}">
+			<view>微信号：{{data.concat.wechat}}</view>
+			<button catchtap="copyWechat" class="c-btn">复制微信</button>
+		</view>
+	</view>
+</view>

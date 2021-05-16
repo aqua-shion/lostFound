@@ -1,0 +1,34 @@
+@import "./iconfont.wxss";
+
+page{
+  background-color: #fdb92c;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item{
+  margin-top: 120rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #4A4A4A;
+  width: 350rpx;
+  height: 350rpx;
+  font-weight: 800;
+  background-color: white;
+  border-radius: 30rpx;
+  box-shadow: 0 0 30rpx rgba(0, 0, 0, .3);
+}
+
+.iconfont{
+  text-align: center;
+  width: 100%;
+  font-size: 150rpx;
+  color: #4A4A4A;
+  font-weight: 600;
+  margin-top: 50rpx;
+}

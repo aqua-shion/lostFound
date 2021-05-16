@@ -1,0 +1,5 @@
+<view class="title">发送站内信：</view>
+<view class="card">
+  <textarea class="textarea" maxlength="300" value="{{content}}" bindinput="handleInput" placeholder="请输入发送内容"></textarea>
+</view>
+<button bindtap="save" class="my-btn submit-btn">发  送</button>

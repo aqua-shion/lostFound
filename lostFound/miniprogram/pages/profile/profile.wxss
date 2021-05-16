@@ -1,0 +1,16 @@
+.item{
+  margin:50rpx;
+  height: 100rpx;
+  border-bottom: 2rpx solid #fdb92c;
+}
+
+.item input{
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.my-btn{
+  margin-top: 80rpx;
+  width: 550rpx;
+}
