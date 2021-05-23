@@ -6,7 +6,7 @@
 
 在开始使用之前，你需要先阅读 [微信小程序开发](https://developers.weixin.qq.com/miniprogram/dev/framework//) 的相关文档。
 
-##  配置数据库 users、list、message
+##  配置数据库
 
 ## 项目功能:
 - [x] 发布页面
