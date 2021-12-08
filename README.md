@@ -71,9 +71,7 @@
 
 你需要创建：
 
-- users
-- messages
-- list
+
 
 三个数据库集合即可。
 
